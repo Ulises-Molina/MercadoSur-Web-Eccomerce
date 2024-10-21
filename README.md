@@ -1,8 +1,13 @@
-# React + Vite
+# Mercado Sur
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Proyecto web de tipo E-Commerce.
 
-Currently, two official plugins are available:
+Proyecto personal realizado con Vite + React, utilizando conocimientos de Javascript,CSS,HTML,React, Git y GitHub.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto cuenta con 3 pantallas enrutadas , `Inicio.jsx` , `Producto.jsx` , `Carrito.jsx`.
+
+Cuenta con 3 componentes funcionales que comparten las pantallas, `Card.jsx`, `Footer.jsx` y `Narbar.jsx`.
+
+Cuenta con 3 contextos, `ProductosContext.jsx`, `CarritoContext.jsx` y `DarkModeContext.jsx`.
+
+Tambien cuenta con 5 paginas de estilos, `card.css`, `carrito.css`, `inicio.css`, `navbar.css` y `producto.css`.
