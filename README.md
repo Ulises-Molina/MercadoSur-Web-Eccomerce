@@ -2,13 +2,18 @@
 
 ## Proyecto web de tipo E-Commerce.
 
-###Proyecto personal realizado con Vite + React
+### Proyecto personal realizado con Vite + React
 
 ### Tecnologias usadas en este proyecto:
+
 -React
+
 -React Router-dom
+
 -Javascript
+
 -CSS
+
 -Material UI
 
 Llamando mediante un `fetch` a una API(en ingles) que proporciona productos falsos, filtrandolos por categoria y precio. 
