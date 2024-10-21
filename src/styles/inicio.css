@@ -239,6 +239,23 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-right: 5px;
 }
 
+.fondo-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 90dvh;
+}
+
+.fondo-loading-dark-mode {
+    background-color: #1f2332;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 90dvh;
+}
+
 
 
 

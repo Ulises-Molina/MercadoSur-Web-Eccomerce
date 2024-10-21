@@ -1,23 +1,17 @@
-import React, { useContext,useState,useEffect } from 'react'
+import React, { useContext } from 'react'
 import "../styles/inicio.css"
 import { ProductosContext } from '../context/ProductosContext'
 import {Card} from '../components/Card'
 import { Footer } from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 import { DarkModeContext } from '../context/DarkModeContext'
+import { Loading } from '../components/Loading'
 
 export const Inicio = () => {
 
-    const {productos,filtrarProductos,cambiarFiltro,filtros,valorMinInput,valorMaxInput,manejarValorMinInput,manejarValorMaxInput,busqueda,setProductos} = useContext(ProductosContext);
+    const {productos,productosOriginales,loading,filtrarProductos,cambiarFiltro,filtros,valorMinInput,valorMaxInput,manejarValorMinInput,manejarValorMaxInput,busqueda,setProductos} = useContext(ProductosContext);
 
-    const {darkMode} = useContext(DarkModeContext)
-    const [productosOriginales, setProductosOriginales] = useState([]);
-
-    useEffect(() => {
-        if (productos.length > 0 && productosOriginales.length === 0) {
-            setProductosOriginales(productos);
-        }
-    }, [productos]);
+    const {darkMode} = useContext(DarkModeContext);
 
     const buscarProductos = (productos) => {
         if(busqueda.length > 2) {
@@ -44,6 +38,9 @@ export const Inicio = () => {
         else if (valorSeleccionado === "Por nombre") {
             ordenarProductosNombre();
         }
+        else if (valorSeleccionado === "Mas comprados"){
+            setProductos(productosOriginales)
+        }
         else {
             setProductos(productosOriginales)
         }
@@ -68,7 +65,9 @@ export const Inicio = () => {
     return (
         <>
         <Navbar></Navbar>
-        <div className={darkMode ? "dark-mode" : "background"}>
+        {
+            loading ? <Loading></Loading> :
+            <div className={darkMode ? "dark-mode" : "background"}>
         {
             filtros.category !== "all" && filtros.category !== "appliances" ? (<h2 className={darkMode ? "filtros-categoria-dark-mode": 'filtros-categoria'}>{
                 filtros.category.charAt(0).toUpperCase() + filtros.category.slice(1)}</h2>)
@@ -131,6 +130,7 @@ export const Inicio = () => {
         }
         </div>
         </div>
+        }
         <Footer></Footer>
         </>
     )

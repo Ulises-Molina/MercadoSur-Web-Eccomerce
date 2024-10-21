@@ -6,7 +6,7 @@ Proyecto personal realizado con Vite + React, utilizando conocimientos de Javasc
 
 El proyecto cuenta con 3 pantallas enrutadas , `Inicio.jsx` , `Producto.jsx` , `Carrito.jsx`.
 
-Cuenta con 3 componentes funcionales que comparten las pantallas, `Card.jsx`, `Footer.jsx` y `Narbar.jsx`.
+Cuenta con 4 componentes funcionales que comparten las pantallas, `Card.jsx`, `Footer.jsx`, `Narbar.jsx` y `Loading.jsx`.
 
 Cuenta con 3 contextos, `ProductosContext.jsx`, `CarritoContext.jsx` y `DarkModeContext.jsx`.
 

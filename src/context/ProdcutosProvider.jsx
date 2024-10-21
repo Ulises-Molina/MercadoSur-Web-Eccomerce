@@ -30,15 +30,27 @@ export const ProductosProvider = ({children}) => {
         })
     }
 
+    const [productosOriginales, setProductosOriginales] = useState([]);
+
+    const [loading, setLoading] = useState(true);
+
     const [productos, setProductos] = useState(()=> {
         const productosSave = localStorage.getItem('productosSave')
         return productosSave ? JSON.parse(productosSave) : []
     });
 
     const fetchProductos = async()=> {
-        const res = await fetch('https://fakestoreapi.in/api/products?limit=150');
-        const data = await res.json();
-        setProductos(data.products);
+        try {
+            const res = await fetch('https://fakestoreapi.in/api/products?limit=150');
+            const data = await res.json();
+            setProductos(data.products);
+            setProductosOriginales(data.products)
+            setLoading(false)
+        }
+        catch(error) {
+            alert("Ha ocurrido un error al cargar los productos, intentelo denuevo mas tarde")
+        }
+        
     }
 
 
@@ -84,7 +96,7 @@ export const ProductosProvider = ({children}) => {
 
 
     return (
-        <ProductosContext.Provider value={{productos,cambiarFiltro,filtros,filtrarProductos,valorMinInput,valorMaxInput,manejarValorMinInput,manejarValorMaxInput,setProductos,manejarInput,busqueda,setBusqueda}}>
+        <ProductosContext.Provider value={{productos,loading,productosOriginales,cambiarFiltro,filtros,filtrarProductos,valorMinInput,valorMaxInput,manejarValorMinInput,manejarValorMaxInput,setProductos,manejarInput,busqueda,setBusqueda}}>
             {children}
         </ProductosContext.Provider>
     )
