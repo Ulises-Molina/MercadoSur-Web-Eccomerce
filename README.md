@@ -2,7 +2,7 @@
 
 ## Proyecto web de tipo E-Commerce.
 
-Proyecto personal realizado con Vite + React, utilizando conocimientos de Javascript,CSS,HTML,React, Git y GitHub.
+Proyecto personal realizado con Vite + React, utilizando conocimientos de Javascript, CSS, HTML, React, Git y GitHub.
 
 El proyecto cuenta con 3 pantallas enrutadas , `Inicio.jsx` , `Producto.jsx` , `Carrito.jsx`.
 
