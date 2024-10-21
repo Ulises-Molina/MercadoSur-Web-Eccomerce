@@ -1,0 +1,117 @@
+.tarjeta {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    min-height: 200px;
+    overflow:hidden;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #e7f0f8;
+    box-shadow:  20px 10px 60px #bebebe,
+                -20px -10px 60px #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.tarjeta:hover {
+    transform: translateY(-25px);
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #fff;
+}
+
+.img-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.img-tarjeta {
+    max-width: 100%;
+    max-height: 100%;
+    transition: max-width .5s ease;
+    transition: max-height .5s ease;
+}
+
+.img-tarjeta-dark-mode {
+    max-width: 100%;
+    max-height: 100%;
+    transition: max-width .5s ease;
+    transition: max-height .5s ease;
+    border-radius: 30px;
+}
+
+.img-tarjeta-dark-mode:hover {
+    max-width: 130%;
+    max-height: 130%;
+    cursor: pointer;
+}
+
+.img-tarjeta:hover {
+    max-width: 130%;
+    max-height: 130%;
+    cursor: pointer;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    min-height: 45px;
+    overflow: hidden;
+    margin: 15px;
+    font-weight: 400;
+}
+
+.price {
+    color: #111;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #6374ae;
+    width: 70%;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #6374ae;
+}
+
+.info-tarjeta {
+    width: 100%;
+}
+
+.tarjeta-dark-mode {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    min-height: 200px;
+    overflow:hidden;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #e7f0f8;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #607bb0;
+    box-shadow: inset 20px 20px 64px #43567b,
+            inset -20px -20px 64px #7da0e5;
+    border: none;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    color: #222;
+}
+
+.tarjeta-dark-mode:hover {
+    background-color: #4e6691; 
+    transform: translateY(-25px);
+    box-shadow: inset 20px 20px 64px #43567b,
+            inset -20px -20px 64px #7da0e5;
+}
