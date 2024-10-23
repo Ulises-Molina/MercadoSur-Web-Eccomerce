@@ -155,26 +155,24 @@ body {
     background-color: #fff9;
     max-width: 50dvw;
     margin: auto;
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     min-width: 750px;
     box-shadow: 0 4px 15px #3332;
-    margin-bottom: 30px;
     border: 1px solid #8883;
 }
 
 .carrito-resumen-dark-mode {
+    max-width: 50dvw;
+    margin: auto;
     background-color: #607bb0;
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     min-width: 750px;
     box-shadow: inset 20px 20px 64px #43567b,
             inset -20px -20px 64px #7da0e5;
-    margin-bottom: 30px;
     border: 1px solid #8883;
 }
 
@@ -237,6 +235,29 @@ body {
 .carrito-comprar-dark-mode:active {
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} 
+
+.flexbox {
+    display: flex;
+    width: 104.2%;
+}
+
+.h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container-compra {
+    min-height: 80dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-compra-dark-mode {
+    background-color: #1f2332;
+    min-height: 80dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -286,6 +307,9 @@ body {
         .carrito-container-dark-mode {
             min-width: 285px;
             align-items: center;
+        }
+        .container-compra-dark-mode {
+            min-width: 355px;
         }
 
         .carrito-container {

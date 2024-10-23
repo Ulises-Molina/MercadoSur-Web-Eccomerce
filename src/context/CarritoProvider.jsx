@@ -79,9 +79,12 @@ export const CarritoProvider = ({children}) => {
         dispatch(action)
     }
 
+    const calcularTotal = ()=> {
+        return listaCompras.reduce((total,item) => total + item.price * item.cantidad ,0 ).toFixed(2)
+    }
 
     return (
-        <CarritoContext.Provider value={{listaCompras, agregarCompra ,aumentarCantidad,disminuirCantidad,eliminarCompra}}>
+        <CarritoContext.Provider value={{listaCompras, agregarCompra ,aumentarCantidad,disminuirCantidad,eliminarCompra,calcularTotal}}>
             {children}
         </CarritoContext.Provider>
     )

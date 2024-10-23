@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import "../styles/card.css"
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';

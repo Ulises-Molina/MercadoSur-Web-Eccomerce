@@ -4,15 +4,21 @@ import { CarritoContext } from '../context/CarritoContext'
 import { Navbar } from '../components/Navbar'
 import { DarkModeContext } from '../context/DarkModeContext'
 import { Footer } from '../components/Footer'
+import { useNavigate } from 'react-router-dom';
 
 export const Carrito = () => {
     
     const {darkMode} = useContext(DarkModeContext)
 
-    const {listaCompras,aumentarCantidad,disminuirCantidad,eliminarCompra} = useContext(CarritoContext);
+    const {listaCompras,aumentarCantidad,disminuirCantidad,eliminarCompra,calcularTotal} = useContext(CarritoContext);
 
-    const calcularTotal = ()=> {
-        return listaCompras.reduce((total,item) => total + item.price * item.cantidad ,0 ).toFixed(2)
+
+    const navigate = useNavigate();
+
+    
+
+    const irACompra = () => {
+        navigate(`/compra`)
     }
 
 
@@ -52,7 +58,7 @@ export const Carrito = () => {
                 <h2 className='carrito-resumen-total'>Total</h2>
                 <h2 className='carrito-resumen-precio'>$ {calcularTotal()}</h2>
                 </span>
-                <button className={darkMode ? 'carrito-comprar-dark-mode' : 'carrito-comprar'}>Comprar</button>
+                <button onClick={irACompra} className={darkMode ? 'carrito-comprar-dark-mode' : 'carrito-comprar'}>Comprar</button>
             </div>
         </div>
         <Footer></Footer>

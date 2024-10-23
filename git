@@ -1,0 +1,42 @@
+[33mcommit f8c883df66652070c36c1deb16d73099511a4a11[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 3beb6 0abd7
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 17:25:02 2024 -0300
+
+    Merge branch 'main' of https://github.com/Ulises-Molina/MercadoSur-Proyecto-Web
+
+[33mcommit 3beb648fba173326e307c76ca582469ad784ce61[m
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 17:17:14 2024 -0300
+
+    Cree el componente Loading y realice cambios
+
+[33mcommit 0abd72776d9f6a0e8b97d818ed8f08bc4adf8918[m
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 16:53:42 2024 -0300
+
+    Update README.md
+
+[33mcommit 7672ee7ccd4f46fe23acf1a8ce5c3170582ebb42[m
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 12:03:56 2024 -0300
+
+    Update README.md
+
+[33mcommit d9b0c228ca3d8ebdeb205a62bfc97b25fd4f2235[m
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 11:59:09 2024 -0300
+
+    Update README.md
+
+[33mcommit e48e8de6558d33889d1b7be7fc2e4c3494419a8d[m
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 11:52:58 2024 -0300
+
+    README modificado
+
+[33mcommit 36b12632f02297f430c1b5e575440036693efbfa[m
+Author: Ulises Molina <uli.molina10@gmail.com>
+Date:   Mon Oct 21 10:41:26 2024 -0300
+
+    Subiendo MercadoSur proyecto Local
