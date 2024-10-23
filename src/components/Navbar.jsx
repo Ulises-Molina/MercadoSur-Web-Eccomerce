@@ -41,7 +41,7 @@ export const Navbar = () => {
         <>
         <div className='header'>
             <NavLink to='/inicio' onClick={()=> cambiarFiltro("all")}>
-            <img src='../../public/icons8-bolsa-96.png' alt="Logo"></img></NavLink>
+            <img src='/icons8-bolsa-96.png' alt="Logo"></img></NavLink>
             <Link to="/inicio" className='mercadosur' onClick={()=> cambiarFiltro("all")}>MercadoSur</Link>
             <div className='contenedor-input'>
             <input className='input-search' type='serch' autoComplete='off' placeholder='Buscar productos' onChange={manejarInput}/>
