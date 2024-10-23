@@ -1,12 +1,13 @@
-import React, { useContext } from 'react'
 import CreditCard from '@mui/icons-material/CreditCard';
 import LocalShipping from '@mui/icons-material/LocalShipping';
 import Security from '@mui/icons-material/Security';
 import { DarkModeContext } from '../context/DarkModeContext';
+import { useContext } from 'react';
 
 export const Footer = () => {
 
-    const {darkMode} =useContext(DarkModeContext)
+    const {darkMode} = useContext(DarkModeContext);
+
     return (
         <footer className={darkMode ? "footer-dark-mode" :"footer-container"}>
             <div className='footer-contenido'>

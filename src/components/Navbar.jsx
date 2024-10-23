@@ -1,4 +1,3 @@
-
 import Badge from '@mui/material/Badge';
 import ShoppingCart from '@mui/icons-material/ShoppingCart';
 import "../styles/navbar.css";
@@ -41,7 +40,7 @@ export const Navbar = () => {
         <>
         <div className='header'>
             <NavLink to='/inicio' onClick={()=> cambiarFiltro("all")}>
-            <img src='../../public/icons8-bolsa-48.png' alt="Logo"></img></NavLink>
+            <img src='../../public/globe-earth.png' alt="Logo"></img></NavLink>
             <Link to="/inicio" className='mercadosur' onClick={()=> cambiarFiltro("all")}>MercadoSur</Link>
             <div className='contenedor-input'>
             <input className='input-search' type='serch' autoComplete='off' placeholder='Buscar productos' onChange={manejarInput}/>
