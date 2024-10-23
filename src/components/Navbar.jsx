@@ -12,7 +12,6 @@ import { ProductosContext } from '../context/ProductosContext';
 import { Switch } from '@mui/material';
 import { DarkMode } from '@mui/icons-material';
 import { DarkModeContext } from '../context/DarkModeContext';
-import "../../public/icons8-bolsa-96.png"
 
 
 
