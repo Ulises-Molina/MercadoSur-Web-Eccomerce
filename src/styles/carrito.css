@@ -326,12 +326,13 @@ body {
 
         .carrito-resumen-dark-mode {
             min-width: 300px;
-            
+            margin-left: 30px;
             
         }
 
         .carrito-resumen{
             min-width: 300px;
+            margin-left: 30px;
             
         }
     }

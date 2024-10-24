@@ -181,7 +181,7 @@ DNI del titular       : ${formValores.dni}
         error={!!errores.dni}
         helperText={errores.dni}
     />
-    <Button variant="contained" color="primary" type="submit" sx={{ mt: 2,width:'30%',color:'#333'}}
+    <Button variant="contained" color="primary" type="submit" sx={{ mt: 2,width:'50%',color:'#333'}}
     disabled={!canSubmit}>
         Comprar
     </Button>
@@ -195,7 +195,7 @@ DNI del titular       : ${formValores.dni}
     aria-labelledby="modal-modal-title"
     aria-describedby="modal-modal-description"
 >
-    <Box sx={{display:"flex",flexDirection:"column", background : "#6374ae", width:"50%",height:"200px",justifyContent:"center",alignItems:"center",margin:"auto", marginTop : "200px",borderRadius:"7px"}}>
+    <Box sx={{display:"flex",flexDirection:"column", background : "#6374ae", width:"65%",height:"300px",justifyContent:"center",alignItems:"center",margin:"auto", marginTop : "200px",borderRadius:"7px"}}>
     <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2,margin:"20px" }}>
         Compra realizada
     </Typography>
