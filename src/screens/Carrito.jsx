@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import '../styles/carrito.css'
 import { CarritoContext } from '../context/CarritoContext'
 import { Navbar } from '../components/Navbar'
@@ -28,7 +28,7 @@ export const Carrito = () => {
         <div className={darkMode ? 'carrito-container-dark-mode' : 'carrito-container'}>
             {
                 listaCompras.map(item => (
-                    <div className={darkMode ? 'carrito-producto-dark-mode':'carrito-producto'}>
+                    <div key={item.id} className={darkMode ? 'carrito-producto-dark-mode':'carrito-producto'}>
                 <div className='carrito-img-container'>
                     <img src={item.image} className={darkMode ? 'carrito-img-dark-mode':'carrito-img'}></img>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Footer } from '../components/Footer'
 import { ProductosContext } from '../context/ProductosContext';
 import { useParams } from 'react-router-dom';
@@ -10,7 +10,7 @@ import { Navbar } from '../components/Navbar';
 import { DarkModeContext } from '../context/DarkModeContext';
 
 
-export const Producto = ({}) => { 
+export const Producto = () => { 
     const [added, setAdded] = useState(false)
 
     const {id} = useParams();
@@ -39,7 +39,7 @@ export const Producto = ({}) => {
         handleAgregar(producto)
         setAdded(true)
     }
-    const clickQuitar = (id) => {
+    const clickQuitar = () => {
         handleQuitar(producto.id)
         setAdded(false)
     }

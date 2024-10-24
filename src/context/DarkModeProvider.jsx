@@ -1,4 +1,3 @@
-import React from 'react'
 import { DarkModeContext } from './DarkModeContext'
 import { useState } from 'react'
 

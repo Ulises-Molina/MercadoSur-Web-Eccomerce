@@ -1,4 +1,3 @@
-import React from 'react'
 import { Inicio } from './screens/Inicio'
 import { ProductosProvider } from './context/ProdcutosProvider'
 import { Route, Routes } from 'react-router-dom'

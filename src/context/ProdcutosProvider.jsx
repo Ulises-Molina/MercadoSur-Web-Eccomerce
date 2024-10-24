@@ -1,4 +1,3 @@
-import React from 'react'
 import { ProductosContext } from './ProductosContext'
 import { useState,useEffect } from 'react'
 
@@ -48,7 +47,7 @@ export const ProductosProvider = ({children}) => {
             setLoading(false)
         }
         catch(error) {
-            alert("Ha ocurrido un error al cargar los productos, intentelo denuevo mas tarde")
+            alert("Ha ocurrido un error al cargar los productos, intentelo denuevo mas tarde" + error)
         }
         
     }
