@@ -1,5 +1,5 @@
 import { DarkModeContext } from './DarkModeContext'
-import { useState } from 'react'
+import { useState, React } from 'react'
 
 export const DarkModeProvider = ({children}) => {
     const [darkMode, setDarkMode] = useState(()=> {

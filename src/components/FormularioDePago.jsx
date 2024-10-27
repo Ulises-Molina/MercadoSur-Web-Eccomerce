@@ -1,5 +1,5 @@
 import { TextField, Button, Box, Modal, Typography } from '@mui/material';
-import { useState } from 'react';
+import { useState,React } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export const FormularioDePago = () =>  {

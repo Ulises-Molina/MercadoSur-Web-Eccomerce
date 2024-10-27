@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, React } from 'react'
 import { Footer } from '../components/Footer'
 import { ProductosContext } from '../context/ProductosContext';
 import { useParams } from 'react-router-dom';

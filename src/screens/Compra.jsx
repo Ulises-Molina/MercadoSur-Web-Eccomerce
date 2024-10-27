@@ -1,7 +1,7 @@
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
 import { DarkModeContext } from '../context/DarkModeContext'
-import { useContext } from 'react'
+import { useContext,React } from 'react'
 import { CarritoContext } from '../context/CarritoContext'
 import { FormularioDePago } from '../components/FormularioDePago'
 import "../styles/carrito.css"
@@ -9,7 +9,6 @@ import "../styles/carrito.css"
 
 
 export const Compra = () => {
-
     const {darkMode} = useContext(DarkModeContext);
     const {calcularTotal} =useContext(CarritoContext)
 

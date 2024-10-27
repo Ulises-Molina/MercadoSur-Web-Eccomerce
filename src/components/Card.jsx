@@ -1,6 +1,6 @@
 import "../styles/card.css"
 import { useNavigate } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, React } from 'react';
 import { ProductosContext } from '../context/ProductosContext';
 import { DarkModeContext } from '../context/DarkModeContext';
 

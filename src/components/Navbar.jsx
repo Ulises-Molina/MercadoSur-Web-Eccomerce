@@ -4,7 +4,7 @@ import "../styles/navbar.css";
 import "../styles/inicio.css"
 import SearchIcon from '@mui/icons-material/Search';
 import { NavLink,Link } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext ,React} from 'react';
 import { CarritoContext } from '../context/CarritoContext';
 import { useState } from 'react';
 import { ProductosContext } from '../context/ProductosContext';
