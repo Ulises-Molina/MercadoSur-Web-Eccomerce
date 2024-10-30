@@ -6,7 +6,7 @@ import { DarkModeContext } from '../context/DarkModeContext';
 
 
 export const Card = ({imagen,nombre,precio,id}) => {
-
+    
     const {darkMode} = useContext(DarkModeContext)
 
     const {setBusqueda} = useContext(ProductosContext)

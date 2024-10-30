@@ -86,8 +86,18 @@ export const Inicio = () => {
         <div className='filtro-precio'>
         <label>Introduce un rango de precio</label>
         <input type='number' placeholder='Minimo'
-        onChange={manejarValorMinInput}/>
-        <input type='number' placeholder='Maximo' onChange={manejarValorMaxInput}/>
+        onChange={manejarValorMinInput}
+        onKeyDown={(e)=> {
+            if(e.key === "Enter" || e.key === "NumpadEnter") {
+                cambiarFiltro(filtros.category,valorMinInput,valorMaxInput)
+            }
+        }}/>
+        <input type='number' placeholder='Maximo' onChange={manejarValorMaxInput}
+        onKeyDown={(e)=> {
+            if(e.key === "Enter" || e.key === "NumpadEnter") {
+                cambiarFiltro(filtros.category,valorMinInput,valorMaxInput)
+            }
+        }}/>
         <button onClick={()=> cambiarFiltro(filtros.category,valorMinInput,valorMaxInput)} className='boton-filtrar'>Filtrar</button>
         </div>
         <div className='ordenar-productos'>

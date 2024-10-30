@@ -307,32 +307,33 @@ body {
         .carrito-container-dark-mode {
             min-width: 285px;
             align-items: center;
+            gap: 25px;
         }
         .container-compra-dark-mode {
-            min-width: 355px;
+            gap: 5px;
         }
 
         .carrito-container {
-            min-width: 285px
+            min-width: 285px;
+            align-items: center;
+            gap: 25px;
         }
 
         .carrito-producto-dark-mode {
-            width: 300px;
+            width: 280px;
         }
 
         .carrito-producto {
-            width: 300px;
+            width: 280px;
         }
 
         .carrito-resumen-dark-mode {
-            min-width: 300px;
-            margin-left: 30px;
-            
+            min-width: 280px;
+            margin-top: 20px;
         }
 
         .carrito-resumen{
-            min-width: 300px;
-            margin-left: 30px;
+            min-width: 280px;
             
         }
     }
