@@ -35,13 +35,27 @@ export const Navbar = () => {
         }
     }
 
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
+    
+
 
     return (
         <>
         <div className='header'>
-            <NavLink to='/inicio' onClick={()=> cambiarFiltro("all")}>
+            <NavLink to='/inicio' onClick={()=> {
+                cambiarFiltro("all")
+                handleScrollToTop()
+                }}>
             <img src='/globe-earth.png' alt="Logo"></img></NavLink>
-            <Link to="/inicio" className='mercadosur' onClick={()=> cambiarFiltro("all")}>MercadoSur</Link>
+            <Link to="/inicio" className='mercadosur' onClick={()=> {cambiarFiltro("all")
+            handleScrollToTop()
+            }}>MercadoSur</Link>
             <div className='contenedor-input'>
             <input className='input-search' type='serch' autoComplete='off' placeholder='Buscar productos' onChange={manejarInput}/>
             <SearchIcon className='icon-lupa'></SearchIcon>
