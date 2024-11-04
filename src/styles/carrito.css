@@ -251,9 +251,11 @@ body {
     min-height: 80dvh;
     display: flex;
     flex-direction: column;
+    padding: 15px;
 }
 
 .container-compra-dark-mode {
+    padding: 15px;
     background-color: #1f2332;
     min-height: 80dvh;
     display: flex;
@@ -307,10 +309,11 @@ body {
         .carrito-container-dark-mode {
             min-width: 285px;
             align-items: center;
-            gap: 25px;
+            gap: 15px;
         }
         .container-compra-dark-mode {
             gap: 5px;
+            min-width: 350px;
         }
 
         .carrito-container {
@@ -335,6 +338,10 @@ body {
         .carrito-resumen{
             min-width: 280px;
             
+        }
+
+        .carrito-precio {
+            margin: 10px;
         }
     }
 
