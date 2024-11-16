@@ -30,5 +30,6 @@ Cuenta con 3 contextos, `ProductosContext.jsx`, `CarritoContext.jsx` y `DarkMode
 Tambien cuenta con 5 paginas de estilos, `card.css`, `carrito.css`, `inicio.css`, `navbar.css` y `producto.css`.
 
 >[NOTE]
+>
 >Las cards con informacion de los productos traidos de la API estan en ingles al igual que la API. La pagina solo esta desarrollada para mostrar habilidades tecnicas en las distintas herramientas utilizadas para su creacion, LOS PRODUCTOS NO EXISTEN.
 
