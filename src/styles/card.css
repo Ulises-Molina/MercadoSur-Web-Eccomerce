@@ -17,11 +17,6 @@
     cursor: pointer;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
-.tarjeta:hover {
-    transform: translateY(-25px);
-    box-shadow:  20px 20px 60px #bebebe,
-                -20px -20px 60px #fff;
-}
 
 .img-container {
     width: 100%;
@@ -107,11 +102,4 @@
     border: none;
     transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
     color: #222;
-}
-
-.tarjeta-dark-mode:hover {
-    background-color: #4e6691; 
-    transform: translateY(-25px);
-    box-shadow: inset 20px 20px 64px #43567b,
-            inset -20px -20px 64px #7da0e5;
 }
